@@ -1,0 +1,123 @@
+{
+  "dataset_rows": 395,
+  "feature_count": 32,
+  "target": "G3",
+  "test_size": 0.2,
+  "random_state": 42,
+  "selection_criterion": "Lowest mean cross-validated RMSE on the training split; held-out metrics are reported separately. Exact ties are resolved by declared model order.",
+  "selection_tie_breaker": "For equal training-split CV RMSE, select the first model in MODEL_FACTORIES declaration order; held-out metrics do not affect selection.",
+  "selected_model": "Decision Tree",
+  "feature_columns": [
+    "school",
+    "sex",
+    "age",
+    "address",
+    "famsize",
+    "Pstatus",
+    "Medu",
+    "Fedu",
+    "Mjob",
+    "Fjob",
+    "reason",
+    "guardian",
+    "traveltime",
+    "studytime",
+    "failures",
+    "schoolsup",
+    "famsup",
+    "paid",
+    "activities",
+    "nursery",
+    "higher",
+    "internet",
+    "romantic",
+    "famrel",
+    "freetime",
+    "goout",
+    "Dalc",
+    "Walc",
+    "health",
+    "absences",
+    "G1",
+    "G2"
+  ],
+  "models": {
+    "Linear Regression": {
+      "cv_rmse": 1.986946639832322,
+      "r2": 0.7241341236974024,
+      "rmse": 2.3783697847961363,
+      "mae": 1.6466656197147496
+    },
+    "Ridge Regression": {
+      "cv_rmse": 1.9765761620716014,
+      "r2": 0.7257180360697023,
+      "rmse": 2.3715321282176913,
+      "mae": 1.6390671341990937
+    },
+    "Decision Tree": {
+      "cv_rmse": 1.9006897702920447,
+      "r2": 0.6568297189897353,
+      "rmse": 2.652682196025558,
+      "mae": 1.4621541700518035
+    }
+  },
+  "without_previous_marks": {
+    "selected_model": "Ridge Regression",
+    "excluded_features": [
+      "G1",
+      "G2"
+    ],
+    "feature_columns": [
+      "school",
+      "sex",
+      "age",
+      "address",
+      "famsize",
+      "Pstatus",
+      "Medu",
+      "Fedu",
+      "Mjob",
+      "Fjob",
+      "reason",
+      "guardian",
+      "traveltime",
+      "studytime",
+      "failures",
+      "schoolsup",
+      "famsup",
+      "paid",
+      "activities",
+      "nursery",
+      "higher",
+      "internet",
+      "romantic",
+      "famrel",
+      "freetime",
+      "goout",
+      "Dalc",
+      "Walc",
+      "health",
+      "absences"
+    ],
+    "models": {
+      "Linear Regression": {
+        "cv_rmse": 4.607035358217457,
+        "r2": 0.14149247411195787,
+        "rmse": 4.1956808027213786,
+        "mae": 3.39526092580192
+      },
+      "Ridge Regression": {
+        "cv_rmse": 4.58394020009718,
+        "r2": 0.14242701357070997,
+        "rmse": 4.193396549641964,
+        "mae": 3.392874653156791
+      },
+      "Decision Tree": {
+        "cv_rmse": 4.61901964673161,
+        "r2": -0.04144231560529765,
+        "rmse": 4.6211279909185325,
+        "mae": 3.5358354041237914
+      }
+    }
+  }
+}
