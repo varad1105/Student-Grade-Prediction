@@ -1,0 +1,31 @@
+# Python bytecode and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments and local configuration
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# VS Code user state
+.vscode/*
+!.vscode/settings.json
+
+# Downloaded datasets and generated artifacts
+data/*
+!data/.gitkeep
+models/*
+!models/.gitkeep
+reports/
+screenshots/*
+!screenshots/.gitkeep
+
+# OS files
+Thumbs.db
+.DS_Store
